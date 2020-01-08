@@ -1,4 +1,5 @@
 # TD9 : Automation Trading
+Made by Nicolas Matusiak an Nicolas Lecouflet
 
 The python code is available here : 
 
