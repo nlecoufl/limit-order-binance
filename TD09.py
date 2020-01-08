@@ -18,15 +18,12 @@ from urllib.parse import urljoin, urlencode
 exchangeName='Binance'
 
 BASE_URL = 'https://api.binance.com'
-
 API_KEY = os.environ.get("PUBLIC_KEY")
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 headers = {
     'X-MBX-APIKEY': API_KEY
 }
-
-
 
 class BinanceException(Exception):
     def __init__(self, status_code, data):
