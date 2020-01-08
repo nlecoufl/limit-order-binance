@@ -9,7 +9,25 @@ Replace API_KEY and SECRET_KEY with your own keys
 
     API_KEY = 'YOUR_PUBLIC_KEY'
     SECRET_KEY = 'YOUR_PRIVATE_KEY'
-  
+## Main 
+You can run this main if you want to display all the functions. We commented createOrder and cancelOrder because it doesn't work (we don't have fund). 
+WARNING: If you rerun main() a second time, the console will display that the table already exists. Just comment 'con = sqlConnection()' and 'createCandleTable(con,"BTCUSDT","5m")' and 'createTradeTable(con,"BTCUSDT")' to avoid this.
+
+    def main():
+        getList()
+        getDepth()
+        getOrderBook()
+        con = sqlConnection()
+        createCandleTable(con,"BTCUSDT","5m")   
+        refreshDataCandle()
+        con = sqlConnection()
+        createTradeTable(con,"BTCUSDT")
+        refreshData()
+        #createOrder('SELL','8300','0.1')
+        #uuid=333105
+        #cancelOrder(uuid)
+
+## Instruction of TD
 ### Get a list of all available cryptocurrencies and display it
 
     >> getList()
