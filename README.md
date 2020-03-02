@@ -1,6 +1,4 @@
-# TD9 : Automation Trading
-Made by Nicolas Matusiak an Nicolas Lecouflet
-
+# Automation Trading
 The python code is available here : 
 
 --> [Python](https://github.com/nlecoufl/TD9_Monnaie_Numerique/blob/master/TD09.py)
