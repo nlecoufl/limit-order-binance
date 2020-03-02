@@ -8,7 +8,7 @@ Replace API_KEY and SECRET_KEY with your own keys
     API_KEY = 'YOUR_PUBLIC_KEY'
     SECRET_KEY = 'YOUR_PRIVATE_KEY'
 ## Main 
-You can run this main if you want to display all the functions. We commented createOrder and cancelOrder because it doesn't work (we don't have fund). 
+You can run this main if you want to display all the functions. We commented createOrder and cancelOrder because it doesn't work since you need fund to make it run. 
 
 **WARNING:** If you rerun main() a second time, the console will display that the table already exists. Just comment 'con = sqlConnection()' and 'createCandleTable(con,"BTCUSDT","5m")' and 'createTradeTable(con,"BTCUSDT")' to avoid this.
 
